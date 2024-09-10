@@ -20,6 +20,8 @@
         stompClient.send("/pub/sendMessage", {}, JSON.stringify({
             message: "Hello, Server!"
         }));
+    }, (error) => {
+        console.log(error)
     });
 
 </script>
